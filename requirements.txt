@@ -1,0 +1,5 @@
+Flask==1.0.2
+SQLAlchemy==1.2.17
+PyMySQL==0.9.3
+requests==2.13.0
+flask-mysql

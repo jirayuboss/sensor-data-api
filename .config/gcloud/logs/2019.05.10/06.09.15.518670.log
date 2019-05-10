@@ -1,0 +1,116 @@
+2019-05-10 06:09:15,533 DEBUG    root            Loaded Command Group: [u'gcloud', u'init']
+2019-05-10 06:09:15,536 DEBUG    root            Running [gcloud.init] with arguments: []
+2019-05-10 06:09:15,536 INFO     ___FILE_ONLY___ Welcome! This command will take you through the configuration of gcloud.
+
+
+2019-05-10 06:09:15,537 INFO     ___FILE_ONLY___ Settings from your current configuration [default] are:
+
+2019-05-10 06:09:15,541 INFO     ___FILE_ONLY___ compute:
+  region: us-central1
+  zone: us-central1-c
+core:
+  account: jirayupromsongwong@gmail.com
+  disable_usage_reporting: 'True'
+  project: cie-smart-city
+
+2019-05-10 06:09:15,541 INFO     ___FILE_ONLY___ 
+
+2019-05-10 06:09:18,348 INFO     ___FILE_ONLY___ Your current configuration has been set to: [default]
+
+
+2019-05-10 06:09:18,349 INFO     ___FILE_ONLY___ You can skip diagnostics next time by using the following flag:
+
+2019-05-10 06:09:18,349 INFO     ___FILE_ONLY___   gcloud init --skip-diagnostics
+
+
+2019-05-10 06:09:18,349 INFO     ___FILE_ONLY___ Network diagnostic detects and fixes local network connection issues.
+
+2019-05-10 06:09:18,350 INFO     ___FILE_ONLY___ Checking network connection...
+2019-05-10 06:09:19,354 INFO     ___FILE_ONLY___ Reachability Check passed.
+
+2019-05-10 06:09:19,355 INFO     ___FILE_ONLY___ Network diagnostic (1/1 checks) passed.
+
+
+2019-05-10 06:09:21,101 INFO     ___FILE_ONLY___ You are logged in as: [jirayupromsongwong@gmail.com].
+
+
+2019-05-10 06:09:21,111 INFO     oauth2client.client Refreshing access_token
+2019-05-10 06:09:23,856 INFO     ___FILE_ONLY___ Your current project has been set to: [cie-smart-city].
+
+
+2019-05-10 06:09:23,858 DEBUG    root            Loaded Command Group: [u'gcloud', u'compute', u'project_info']
+2019-05-10 06:09:23,874 DEBUG    root            Loaded Command Group: [u'gcloud', u'compute', u'project-info', u'describe']
+2019-05-10 06:09:23,875 INFO     root            Executing: [gcloud compute project-info describe --quiet]
+2019-05-10 06:09:23,878 DEBUG    root            Running [gcloud.compute.project-info.describe] with arguments: [--no-user-output-enabled: "false", --quiet: "True", --verbosity: "none"]
+2019-05-10 06:09:24,393 INFO     root            Display disabled.
+2019-05-10 06:09:24,394 DEBUG    root            SDK update checks are disabled.
+2019-05-10 06:09:26,951 DEBUG    root            Loaded Command Group: [u'gcloud', u'compute', u'zones']
+2019-05-10 06:09:26,955 DEBUG    root            Loaded Command Group: [u'gcloud', u'compute', u'zones', u'list']
+2019-05-10 06:09:26,957 INFO     root            Executing: [gcloud compute zones list]
+2019-05-10 06:09:26,959 DEBUG    root            Running [gcloud.compute.zones.list] with arguments: [--no-user-output-enabled: "false", --verbosity: "none"]
+2019-05-10 06:09:26,969 INFO     root            Display disabled.
+2019-05-10 06:09:27,150 DEBUG    root            SDK update checks are disabled.
+2019-05-10 06:09:29,136 INFO     ___FILE_ONLY___ Your project default Compute Engine zone has been set to [us-central1-c].
+You can change it by running [gcloud config set compute/zone NAME].
+
+
+2019-05-10 06:09:29,138 DEBUG    root            Loaded Command Group: [u'gcloud', u'compute', u'regions']
+2019-05-10 06:09:29,142 DEBUG    root            Loaded Command Group: [u'gcloud', u'compute', u'regions', u'describe']
+2019-05-10 06:09:29,143 INFO     root            Executing: [gcloud compute regions describe https://www.googleapis.com/compute/v1/projects/cie-smart-city/regions/us-central1]
+2019-05-10 06:09:29,145 DEBUG    root            Running [gcloud.compute.regions.describe] with arguments: [--no-user-output-enabled: "false", --verbosity: "none", NAME: "https://www.googleapis.com/compute/v1/projects/cie-smart-city/regions/us-central1"]
+2019-05-10 06:09:29,274 INFO     root            Display disabled.
+2019-05-10 06:09:29,275 DEBUG    root            SDK update checks are disabled.
+2019-05-10 06:09:29,280 INFO     ___FILE_ONLY___ Your project default Compute Engine region has been set to [us-central1].
+You can change it by running [gcloud config set compute/region NAME].
+
+
+2019-05-10 06:09:29,281 DEBUG    root            Executing command: [u'/usr/lib/google-cloud-sdk/bin/gsutil', u'config', u'-n', u'-o', u'/home/jirayupromsongwong/.boto']
+2019-05-10 06:09:29,713 DEBUG    ___FILE_ONLY___ 
+2019-05-10 06:09:29,714 DEBUG    ___FILE_ONLY___ Traceback (most recent call last):
+  File "/usr/lib/google-cloud-sdk/platform/gsutil/gsutil", line 22, in <module>
+    gsutil.RunMain()
+  File "/usr/lib/google-cloud-sdk/platform/gsutil/gsutil.py", line 116, in RunMain
+    import gslib.__main__
+  File "/usr/lib/google-cloud-sdk/platform/gsutil/gslib/__main__.py", line 39, in <module>
+    import boto
+  File "/usr/lib/google-cloud-sdk/platform/gsutil/third_party/boto/boto/__init__.py", line 1216, in <module>
+    boto.plugin.load_plugins(config)
+  File "/usr/lib/google-cloud-sdk/platform/gsutil/third_party/boto/boto/plugin.py", line 93, in load_plugins
+    _import_module(file)
+  File "/usr/lib/google-cloud-sdk/platform/gsutil/third_party/boto/boto/plugin.py", line 75, in _import_module
+    return imp.load_module(name, file, filename, data)
+  File "/usr/lib/python3/dist-packages/google_compute_engine/boto/compute_auth.py", line 19, in <module>
+    from google_compute_engine import logger
+ImportError: No module named google_compute_engine
+
+2019-05-10 06:09:29,714 INFO     ___FILE_ONLY___ Error creating a default .boto configuration file. Please run [gsutil config -n] if you would like to create this file.
+
+2019-05-10 06:09:29,714 INFO     ___FILE_ONLY___ Your Google Cloud SDK is configured and ready to use!
+
+
+2019-05-10 06:09:29,715 INFO     ___FILE_ONLY___ * Commands that require authentication will use jirayupromsongwong@gmail.com by default
+
+2019-05-10 06:09:29,715 INFO     ___FILE_ONLY___ * Commands will reference project `cie-smart-city` by default
+
+2019-05-10 06:09:29,715 INFO     ___FILE_ONLY___ * Compute Engine commands will use region `us-central1` by default
+
+2019-05-10 06:09:29,715 INFO     ___FILE_ONLY___ * Compute Engine commands will use zone `us-central1-c` by default
+
+
+2019-05-10 06:09:29,715 INFO     ___FILE_ONLY___ Run `gcloud help config` to learn how to change individual settings
+
+
+2019-05-10 06:09:29,716 INFO     ___FILE_ONLY___ This gcloud configuration is called [default]. You can create additional configurations if you work with multiple accounts and/or projects.
+
+2019-05-10 06:09:29,716 INFO     ___FILE_ONLY___ Run `gcloud topic configurations` to learn more.
+
+
+2019-05-10 06:09:29,716 INFO     ___FILE_ONLY___ Some things to try next:
+
+
+2019-05-10 06:09:29,716 INFO     ___FILE_ONLY___ * Run `gcloud --help` to see the Cloud Platform services you can interact with. And run `gcloud help COMMAND` to get help on any gcloud command.
+
+2019-05-10 06:09:29,716 INFO     ___FILE_ONLY___ * Run `gcloud topic -h` to learn about advanced features of the SDK like arg files and output formatting
+
+2019-05-10 06:09:29,717 INFO     root            Display format: "default"
+2019-05-10 06:09:29,718 DEBUG    root            SDK update checks are disabled.

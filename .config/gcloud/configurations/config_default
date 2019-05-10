@@ -1,0 +1,8 @@
+[core]
+account = jirayupromsongwong@gmail.com
+project = cie-smart-city
+
+[compute]
+zone = us-central1-c
+region = us-central1
+

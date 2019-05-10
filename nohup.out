@@ -1,0 +1,55 @@
+ * Serving Flask app "rawdata-api" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 129-326-804
+35.238.35.4 - - [09/May/2019 15:22:27] "GET /sensors/sensor_id/SB02 HTTP/1.1" 200 -
+35.238.35.4 - - [09/May/2019 15:23:11] "GET /sensors/sensor_id/SB02 HTTP/1.1" 200 -
+35.238.35.4 - - [09/May/2019 15:23:47] "GET /sensors/sensor_id/SB02 HTTP/1.1" 200 -
+35.238.35.4 - - [09/May/2019 15:24:32] "GET /sensors/sensor_id/SB02 HTTP/1.1" 200 -
+35.238.35.4 - - [09/May/2019 15:27:00] "GET /sensors/sensor_id/SB02 HTTP/1.1" 200 -
+107.178.194.19 - - [09/May/2019 15:37:10] "GET /sensors/sensor_id/SB02 HTTP/1.1" 200 -
+107.178.194.20 - - [09/May/2019 15:37:20] "GET /sensors/sensor_id/SB02 HTTP/1.1" 200 -
+107.178.194.18 - - [09/May/2019 15:37:22] "GET /sensors/sensor_id/SB02 HTTP/1.1" 200 -
+107.178.194.19 - - [09/May/2019 15:37:24] "GET /sensors/sensor_id/SB02 HTTP/1.1" 200 -
+107.178.194.19 - - [09/May/2019 15:37:30] "GET /sensors/sensor_id/SB02 HTTP/1.1" 200 -
+107.178.194.18 - - [09/May/2019 15:37:57] "GET /sensors/sensor_id/SB02 HTTP/1.1" 200 -
+107.178.194.19 - - [09/May/2019 15:44:20] "GET /sensors/sensor_id/SB02 HTTP/1.1" 200 -
+ * Detected change in '/home/jirayupromsongwong/rawdata-api.py', reloading
+https://www.aismagellan.io/api/things/pull/26c02150-6660-11e9-96dd-9fb5d8a71344
+https://www.aismagellan.io/api/things/pull/26c02150-6660-11e9-96dd-9fb5d8a71344
+https://www.aismagellan.io/api/things/pull/26c02150-6660-11e9-96dd-9fb5d8a71344
+https://www.aismagellan.io/api/things/pull/26c02150-6660-11e9-96dd-9fb5d8a71344
+https://www.aismagellan.io/api/things/pull/26c02150-6660-11e9-96dd-9fb5d8a71344
+https://www.aismagellan.io/api/things/pull/26c02150-6660-11e9-96dd-9fb5d8a71344
+https://www.aismagellan.io/api/things/pull/26c02150-6660-11e9-96dd-9fb5d8a71344
+https://www.aismagellan.io/api/things/pull/26c02150-6660-11e9-96dd-9fb5d8a71344
+https://www.aismagellan.io/api/things/pull/26c02150-6660-11e9-96dd-9fb5d8a71344
+https://www.aismagellan.io/api/things/pull/26c02150-6660-11e9-96dd-9fb5d8a71344
+https://www.aismagellan.io/api/things/pull/26c02150-6660-11e9-96dd-9fb5d8a71344
+https://www.aismagellan.io/api/things/pull/26c02150-6660-11e9-96dd-9fb5d8a71344
+ * Restarting with stat
+Traceback (most recent call last):
+  File "/home/jirayupromsongwong/rawdata-api.py", line 38, in <module>
+    def allsensors(project_id=None):
+  File "/home/jirayupromsongwong/venv/local/lib/python2.7/site-packages/flask/app.py", line 1250, in decorator
+    self.add_url_rule(rule, endpoint, f, **options)
+  File "/home/jirayupromsongwong/venv/local/lib/python2.7/site-packages/flask/app.py", line 66, in wrapper_func
+    return f(self, *args, **kwargs)
+  File "/home/jirayupromsongwong/venv/local/lib/python2.7/site-packages/flask/app.py", line 1221, in add_url_rule
+    'existing endpoint function: %s' % endpoint)
+AssertionError: View function mapping is overwriting an existing endpoint function: allsensors
+Traceback (most recent call last):
+  File "rawdata-api.py", line 38, in <module>
+    def allsensors(project_id=None):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1250, in decorator
+    self.add_url_rule(rule, endpoint, f, **options)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 66, in wrapper_func
+    return f(self, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1221, in add_url_rule
+    'existing endpoint function: %s' % endpoint)
+AssertionError: View function mapping is overwriting an existing endpoint function: allsensors
