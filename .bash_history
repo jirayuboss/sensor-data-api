@@ -113,3 +113,10 @@ python rawdata-api.py
 ls
 nano rawdata-api.py
 python rawdata-api.py
+ls
+source venv/bin/activate
+python rawdata-api.py
+ls
+virtualenv env
+source env/bin/activate
+nano rawdata-api.py
